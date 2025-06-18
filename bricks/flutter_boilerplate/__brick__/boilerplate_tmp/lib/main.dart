@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const {{project_name.pascalCase()}}App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class {{project_name.pascalCase()}}App extends StatelessWidget {
+  const {{project_name.pascalCase()}}App({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Boilerplate App',
+      title: '{{project_name.titleCase()}}',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -30,13 +30,13 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const {{project_name.pascalCase()}}HomePage(title: '{{project_name.titleCase()}} Home Page'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class {{project_name.pascalCase()}}HomePage extends StatefulWidget {
+  const {{project_name.pascalCase()}}HomePage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -50,10 +50,10 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<{{project_name.pascalCase()}}HomePage> createState() => _{{project_name.pascalCase()}}HomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _{{project_name.pascalCase()}}HomePageState extends State<{{project_name.pascalCase()}}HomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
