@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:{{project_name.pascalCase()}}/di/dependency_injector.dart';
-import 'package:{{project_name.pascalCase()}}/routers/app_router.dart';
-import 'package:{{project_name.pascalCase()}}/theme/AppTheme.dart';
+import 'package:{{project_name}}/di/dependency_injector.dart';
+import 'package:{{project_name}}/routers/app_router.dart';
+import 'package:{{project_name}}/theme/AppTheme.dart';
 
 
 void main() {

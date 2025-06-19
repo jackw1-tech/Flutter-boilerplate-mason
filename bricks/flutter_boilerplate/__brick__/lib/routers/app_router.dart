@@ -1,8 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:{{project_name.pascalCase()}}/routers/auth_guard.dart';
-import 'package:{{project_name.pascalCase()}}/ui/pages/detail_page.dart';
-import 'package:{{project_name.pascalCase()}}/ui/pages/home_page.dart';
+import 'package:{{project_name}}/routers/auth_guard.dart';
+import 'package:{{project_name}}/ui/pages/detail_page.dart';
+import 'package:{{project_name}}/ui/pages/home_page.dart';
 
 part 'app_router.gr.dart';
 

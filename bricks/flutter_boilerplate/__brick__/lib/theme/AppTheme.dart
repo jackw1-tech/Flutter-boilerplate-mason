@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:{{project_name.pascalCase()}}/theme/AppTextStyles.dart';
-import 'package:{{project_name.pascalCase()}}/theme/ColorPalette.dart';
-import 'package:{{project_name.pascalCase()}}/theme/Dimensions.dart';
+import 'package:{{project_name}}/theme/AppTextStyles.dart';
+import 'package:{{project_name}}/theme/ColorPalette.dart';
+import 'package:{{project_name}}/theme/Dimensions.dart';
 
 class AppTheme {
   // Tema chiaro
