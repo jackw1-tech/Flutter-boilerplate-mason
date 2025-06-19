@@ -1,3 +1,8 @@
+import 'package:flutter/material.dart';
+import 'package:{{project_name.pascalCase()}}/theme/AppTextStyles.dart';
+import 'package:{{project_name.pascalCase()}}/theme/ColorPalette.dart';
+import 'package:{{project_name.pascalCase()}}/theme/Dimensions.dart';
+
 class AppTheme {
   // Tema chiaro
   static ThemeData get lightTheme {

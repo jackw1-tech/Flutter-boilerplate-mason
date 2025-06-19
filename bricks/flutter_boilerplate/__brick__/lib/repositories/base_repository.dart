@@ -1,3 +1,5 @@
+import 'package:{{project_name.pascalCase()}}/model/baseModel.dart';
+
 abstract class BaseRepository<T extends BaseModel> {
   Future<List<T>> getAll();
 

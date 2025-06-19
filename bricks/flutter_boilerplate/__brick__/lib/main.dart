@@ -1,3 +1,7 @@
+import 'package:flutter/material.dart';
+import 'package:{{project_name.pascalCase()}}/di/dependency_injector.dart';
+import 'package:{{project_name.pascalCase()}}/routers/app_router.dart';
+import 'package:{{project_name.pascalCase()}}/theme/AppTheme.dart';
 
 
 void main() {
@@ -28,3 +32,4 @@ class {{project_name.pascalCase()}}App extends StatelessWidget {
     ));
   }
 }
+
