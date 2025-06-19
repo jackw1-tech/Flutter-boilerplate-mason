@@ -1,0 +1,6 @@
+/*
+class BaseServiceImpl implements BaseService {
+
+   
+}
+*/
