@@ -18,6 +18,6 @@ environment:
 vars:
   project_name:
     type: string
-    description: Il nome del progetto
+    description: project_name
     default: MyProject
-    prompt: Quale è il nome del tuo progetto?
+    prompt: Insert the project name (it must be the same as the folder name)
