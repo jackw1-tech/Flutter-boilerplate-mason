@@ -1,4 +1,4 @@
-import 'package:{{project_name}}/model/baseModel.dart';
+import 'package:{{project_name}}/model/base_model.dart';
 
 abstract class BaseRepository<T extends BaseModel> {
   Future<List<T>> getAll();

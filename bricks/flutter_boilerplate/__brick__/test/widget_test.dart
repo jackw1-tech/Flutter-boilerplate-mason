@@ -1,9 +1,9 @@
-// This is a basic Flutter widget test.
+// Smoke test for the generated app.
 //
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
+// It boots the whole app — DependencyInjector, AppTheme and the auto_route
+// router — and checks that the initial route renders and that the local state
+// demo on HomePage reacts to input. Layer-specific tests (mappers, repositories,
+// blocs) belong in test/ mirroring the lib/ structure; see AGENTS.md §12.
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -11,20 +11,19 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:{{project_name.snakeCase()}}/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+  testWidgets('App boots on HomePage and the counter demo updates', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(const {{project_name.pascalCase()}}App());
+    await tester.pumpAndSettle();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // The initial route resolved through AppRouter.
+    expect(find.text('Pine Architecture'), findsOneWidget);
+    expect(find.text('Counter: 0'), findsOneWidget);
 
-    // Tap the '+' icon and trigger a frame.
     await tester.tap(find.byIcon(Icons.add));
     await tester.pump();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('Counter: 1'), findsOneWidget);
   });
 }

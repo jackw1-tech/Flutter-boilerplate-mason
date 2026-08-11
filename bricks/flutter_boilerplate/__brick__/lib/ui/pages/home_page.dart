@@ -1,12 +1,12 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:{{project_name}}/routers/app_router.dart';
-import 'package:{{project_name}}/theme/ColorPalette.dart';
-import 'package:{{project_name}}/theme/Dimensions.dart';
+import 'package:{{project_name}}/theme/color_palette.dart';
+import 'package:{{project_name}}/theme/dimensions.dart';
 
 @RoutePage()
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
     return Center(
       child: Column(
         children: [
-          Icon(Icons.architecture, size: 80, color: ColorPalette.primary),
+          const Icon(Icons.architecture, size: 80, color: ColorPalette.primary),
           const SizedBox(height: 16),
           Text(
             'Pine Architecture Skeleton',
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: ColorPalette.primary.withOpacity(0.1),
+              color: ColorPalette.primary.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: ColorPalette.primary),

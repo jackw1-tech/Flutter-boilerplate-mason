@@ -11,7 +11,7 @@ part 'repositories.dart';
 class DependencyInjector extends StatelessWidget {
   final Widget child;
 
-  const DependencyInjector({required this.child, Key? key}) : super(key: key);
+  const DependencyInjector({required this.child, super.key});
 
   @override
   Widget build(BuildContext context) => DependencyInjectorHelper(

@@ -1,14 +1,13 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:{{project_name}}/theme/ColorPalette.dart';
-import 'package:{{project_name}}/theme/Dimensions.dart';
+import 'package:{{project_name}}/theme/color_palette.dart';
+import 'package:{{project_name}}/theme/dimensions.dart';
 
 @RoutePage()
 class ExampleDetailPage extends StatelessWidget {
   final String id;
 
-  const ExampleDetailPage({@PathParam('id') required this.id, Key? key})
-    : super(key: key);
+  const ExampleDetailPage({@PathParam('id') required this.id, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +71,7 @@ class ExampleDetailPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     Image.asset(
-                      '/Users/giacomobianco/Downloads/pine/PineProg/lib/other/media/images/pine.png',
+                      'lib/other/media/images/pine.png',
                       height: 200,
                       width: double.infinity,
                       fit: BoxFit.contain,
